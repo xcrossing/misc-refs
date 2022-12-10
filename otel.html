@@ -1,0 +1,366 @@
+<!DOCTYPE HTML><html><head><meta charset='utf-8'/><style>body {
+    font-family: 'Dejavu Sans Mono', 'Arial', sans-serif;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tree-html ul {
+    margin-left: 15px;
+}
+
+.tree-html li {
+    list-style-type: none;
+    margin: 10px;
+    position: relative;
+}
+
+.tree-html li::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    width: 15px;
+    height: 15px;
+}
+
+.tree-html li::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    width: 15px;
+    height: 100%;
+}
+
+.tree-html li:last-child::after {
+    display: none;
+}
+
+ul.tree-html>li:first-child::before {
+    display: none;
+}
+
+.tree-html li a {
+    padding: 2px 5px;
+}
+
+.tree-html li a:hover, .tree-html li a:hover+ul li a,
+.tree-html li a:focus, .tree-html li a:focus+ul li a {
+    background-color: #d3d3d3;
+}
+
+.tree-html a.twinkle,
+.tree-html li a.twinkle:hover, .tree-html li a:hover+ul li a.twinkle,
+.tree-html li a.twinkle:focus, .tree-html li a:focus+ul li a.twinkle {
+  background-color: #00bcd4;
+}
+
+.tree-html label {
+  margin: .2em 0 0 -.6em;
+  position: absolute;
+  border: 1px solid #ccc;
+  background: white;
+  width: .6em;
+  height: .6em;
+  display: inline-block;
+  line-height: .65;
+}
+
+.tree-html label.placeholder {
+  visibility: hidden;
+}
+
+.tree-html label::before {
+  color: #ccc;
+  font-family: serif;
+  margin-left: 0.02em;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+  display: none
+}
+
+input[type='checkbox']:checked ~ ul {
+  display: none
+}
+
+input[type="checkbox"] + label::before {
+  content: '-';
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: '+';
+}
+.hl{color: coral;}</style></head><body><ul class='tree-html'><li><input type='checkbox' id='3720'><label for='3720'></label><a ><span class='hl'>OpenTelemetry</span> {:kla=>Module}</a><ul><li><input type='checkbox' id='3740'><label for='3740'></label><a ><span class='hl'>Baggage</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Builder</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Entry</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='3760'><label for='3760'></label><a ><span class='hl'>Propagation</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ContextKeys</span> {:kla=>Module}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li></ul></li><li><input type='checkbox' id='3780'><label for='3780'></label><a ><span class='hl'>Common</span> {:kla=>Module}</a><ul><li><input type='checkbox' id='3800'><label for='3800'></label><a ><span class='hl'>HTTP</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ClientContext</span> {:kla=>Module}</a></li></ul></li><li><input type='checkbox' id='3820'><label for='3820'></label><a ><span class='hl'>Propagation</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>RackEnvGetter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SymbolKeyGetter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><input type='checkbox' id='3840'><label for='3840'></label><a ><span class='hl'>Utilities</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>STRING_PLACEHOLDER</span> {:kla=>String}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>VERSION</span> {:kla=>String}</a></li></ul></li><li><input type='checkbox' id='3860'><label for='3860'></label><a ><span class='hl'>Context</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>DetachError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Key</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='3880'><label for='3880'></label><a ><span class='hl'>Propagation</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>CompositeTextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NoopTextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RackEnvGetter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TextMapGetter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TextMapSetter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>ROOT</span> {:kla=>OpenTelemetry::Context}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>Error</span> {:kla=>Class, :aft=>[StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='3900'><label for='3900'></label><a ><span class='hl'>Instrumentation</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Base</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Registry</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><input type='checkbox' id='3920'><label for='3920'></label><a ><span class='hl'>Internal</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ProxyTracer</span> {:kla=>Class, :aft=>[OpenTelemetry::Trace::Tracer, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ProxyTracerProvider</span> {:kla=>Class, :aft=>[OpenTelemetry::Trace::TracerProvider, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><input type='checkbox' id='3940'><label for='3940'></label><a ><span class='hl'>SDK</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ConfigurationError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='3960'><label for='3960'></label><a ><span class='hl'>Configurator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>NoopTextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>ForwardingLogger</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='3980'><label for='3980'></label><a ><span class='hl'>InstrumentationLibrary</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><input type='checkbox' id='4000'><label for='4000'></label><a ><span class='hl'>Group</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Group</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group"}</a></li><li><input type='checkbox' id='4020'><label for='4020'></label><a ><span class='hl'>Passwd</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Group</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Passwd</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd"}</a></li><li><input type='checkbox' id='4040'><label for='4040'></label><a ><span class='hl'>Tms</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Group</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Passwd</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Tms</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd::Tms"}</a></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>Tms</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd::Tms"}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>Passwd</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Tms</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd::Tms"}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>Internal</span> {:kla=>Module}</a></li><li><input type='checkbox' id='4060'><label for='4060'></label><a ><span class='hl'>Resources</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Resource</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><input type='checkbox' id='4080'><label for='4080'></label><a ><span class='hl'>Trace</span> {:kla=>Module}</a><ul><li><input type='checkbox' id='4100'><label for='4100'></label><a ><span class='hl'>Event</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Group</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Passwd</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Tms</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd::Tms"}</a></li></ul></li><li><input type='checkbox' id='4120'><label for='4120'></label><a ><span class='hl'>Export</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>BatchSpanProcessor</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ConsoleSpanExporter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ExportError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAILURE</span> {:kla=>Integer}</a></li><li><label class='placeholder'></label><a ><span class='hl'>InMemorySpanExporter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MetricsReporter</span> {:kla=>Module}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SUCCESS</span> {:kla=>Integer}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SimpleSpanProcessor</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SpanExporter</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TIMEOUT</span> {:kla=>Integer}</a></li></ul></li><li><input type='checkbox' id='4140'><label for='4140'></label><a ><span class='hl'>Samplers</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ALWAYS_OFF</span> {:kla=>OpenTelemetry::SDK::Trace::Samplers::ConstantSampler}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ALWAYS_ON</span> {:kla=>OpenTelemetry::SDK::Trace::Samplers::ConstantSampler}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ConstantSampler</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='4160'><label for='4160'></label><a ><span class='hl'>Decision</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>DROP</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RECORD_AND_SAMPLE</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RECORD_ONLY</span> {:kla=>Symbol}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>ParentBased</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Result</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TraceIdRatioBased</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><input type='checkbox' id='4180'><label for='4180'></label><a ><span class='hl'>Span</span> {:kla=>Class, :aft=>[OpenTelemetry::Trace::Span, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>INVALID</span> {:kla=>OpenTelemetry::Trace::Span}</a></li></ul></li><li><input type='checkbox' id='4200'><label for='4200'></label><a ><span class='hl'>SpanData</span> {:kla=>Class, :aft=>[Struct, Enumerable, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>Group</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Passwd</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd"}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Tms</span> {:ref=>"OpenTelemetry::SDK::InstrumentationLibrary::Group::Passwd::Tms"}</a></li></ul></li><li><input type='checkbox' id='4220'><label for='4220'></label><a ><span class='hl'>SpanLimits</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>DEFAULT</span> {:kla=>OpenTelemetry::SDK::Trace::SpanLimits}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>SpanProcessor</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Tracer</span> {:kla=>Class, :aft=>[OpenTelemetry::Trace::Tracer, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TracerProvider</span> {:kla=>Class, :aft=>[OpenTelemetry::Trace::TracerProvider, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>VERSION</span> {:kla=>String}</a></li></ul></li><li><input type='checkbox' id='4240'><label for='4240'></label><a ><span class='hl'>SemanticConventions</span> {:kla=>Module}</a><ul><li><input type='checkbox' id='4260'><label for='4260'></label><a ><span class='hl'>Resource</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_CLUSTER_ARN</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_CONTAINER_ARN</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_LAUNCHTYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_TASK_ARN</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_TASK_FAMILY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_ECS_TASK_REVISION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_EKS_CLUSTER_ARN</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_LOG_GROUP_ARNS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_LOG_GROUP_NAMES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_LOG_STREAM_ARNS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_LOG_STREAM_NAMES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CLOUD_ACCOUNT_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CLOUD_AVAILABILITY_ZONE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CLOUD_PLATFORM</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CLOUD_PROVIDER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CLOUD_REGION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONTAINER_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONTAINER_IMAGE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONTAINER_IMAGE_TAG</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONTAINER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONTAINER_RUNTIME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DEPLOYMENT_ENVIRONMENT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DEVICE_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DEVICE_MODEL_IDENTIFIER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DEVICE_MODEL_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_INSTANCE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_MAX_MEMORY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_ARCH</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_IMAGE_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_IMAGE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_IMAGE_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HOST_TYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_CLUSTER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_CONTAINER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_CONTAINER_RESTART_COUNT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_CRONJOB_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_CRONJOB_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_DAEMONSET_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_DAEMONSET_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_DEPLOYMENT_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_DEPLOYMENT_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_JOB_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_JOB_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_NAMESPACE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_NODE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_NODE_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_POD_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_POD_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_REPLICASET_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_REPLICASET_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_STATEFULSET_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>K8S_STATEFULSET_UID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>OS_DESCRIPTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>OS_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>OS_TYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>OS_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_COMMAND</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_COMMAND_ARGS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_COMMAND_LINE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_EXECUTABLE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_EXECUTABLE_PATH</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_OWNER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_PID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_RUNTIME_DESCRIPTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_RUNTIME_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PROCESS_RUNTIME_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SERVICE_INSTANCE_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SERVICE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SERVICE_NAMESPACE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SERVICE_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TELEMETRY_AUTO_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TELEMETRY_SDK_LANGUAGE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TELEMETRY_SDK_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TELEMETRY_SDK_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>WEBENGINE_DESCRIPTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>WEBENGINE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>WEBENGINE_VERSION</span> {:kla=>String}</a></li></ul></li><li><input type='checkbox' id='4280'><label for='4280'></label><a ><span class='hl'>Trace</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_ATTRIBUTES_TO_GET</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_ATTRIBUTE_DEFINITIONS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_CONSISTENT_READ</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_CONSUMED_CAPACITY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_COUNT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_EXCLUSIVE_START_TABLE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_GLOBAL_SECONDARY_INDEXES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_GLOBAL_SECONDARY_INDEX_UPDATES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_INDEX_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_ITEM_COLLECTION_METRICS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_LIMIT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_LOCAL_SECONDARY_INDEXES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_PROJECTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_PROVISIONED_READ_CAPACITY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_PROVISIONED_WRITE_CAPACITY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_SCANNED_COUNT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_SCAN_FORWARD</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_SEGMENT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_SELECT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_TABLE_COUNT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_TABLE_NAMES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_DYNAMODB_TOTAL_SEGMENTS</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>AWS_LAMBDA_INVOKED_ARN</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CODE_FILEPATH</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CODE_FUNCTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CODE_LINENO</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CODE_NAMESPACE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_CONSISTENCY_LEVEL</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_COORDINATOR_DC</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_COORDINATOR_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_IDEMPOTENCE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_KEYSPACE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_PAGE_SIZE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_SPECULATIVE_EXECUTION_COUNT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CASSANDRA_TABLE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_CONNECTION_STRING</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_HBASE_NAMESPACE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_JDBC_DRIVER_CLASSNAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_MONGODB_COLLECTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_MSSQL_INSTANCE_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_OPERATION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_REDIS_DATABASE_INDEX</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_SQL_TABLE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_STATEMENT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_SYSTEM</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>DB_USER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ENDUSER_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ENDUSER_ROLE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>ENDUSER_SCOPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>EXCEPTION_ESCAPED</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>EXCEPTION_MESSAGE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>EXCEPTION_STACKTRACE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>EXCEPTION_TYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_COLDSTART</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_CRON</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_DOCUMENT_COLLECTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_DOCUMENT_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_DOCUMENT_OPERATION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_DOCUMENT_TIME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_EXECUTION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_INVOKED_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_INVOKED_PROVIDER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_INVOKED_REGION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_TIME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>FAAS_TRIGGER</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_CLIENT_IP</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_FLAVOR</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_HOST</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_METHOD</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_REQUEST_CONTENT_LENGTH</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_RESPONSE_CONTENT_LENGTH</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_RESPONSE_CONTENT_LENGTH_UNCOMPRESSED</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_ROUTE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_SCHEME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_SERVER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_STATUS_CODE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_TARGET</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_URL</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>HTTP_USER_AGENT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_CONVERSATION_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_DESTINATION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_DESTINATION_KIND</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_KAFKA_CLIENT_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_KAFKA_CONSUMER_GROUP</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_KAFKA_MESSAGE_KEY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_KAFKA_PARTITION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_KAFKA_TOMBSTONE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_MESSAGE_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_MESSAGE_PAYLOAD_COMPRESSED_SIZE_BYTES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_MESSAGE_PAYLOAD_SIZE_BYTES</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_OPERATION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_PROTOCOL</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_PROTOCOL_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_RABBITMQ_ROUTING_KEY</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_SYSTEM</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_TEMP_DESTINATION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>MESSAGING_URL</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CARRIER_ICC</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CARRIER_MCC</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CARRIER_MNC</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CARRIER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CONNECTION_SUBTYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_CONNECTION_TYPE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_IP</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_HOST_PORT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_PEER_IP</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_PEER_NAME</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_PEER_PORT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>NET_TRANSPORT</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PEER_SERVICE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_GRPC_STATUS_CODE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_JSONRPC_ERROR_CODE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_JSONRPC_ERROR_MESSAGE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_JSONRPC_REQUEST_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_JSONRPC_VERSION</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_METHOD</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_SERVICE</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>RPC_SYSTEM</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>THREAD_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>THREAD_NAME</span> {:kla=>String}</a></li></ul></li></ul></li><li><input type='checkbox' id='4300'><label for='4300'></label><a ><span class='hl'>Trace</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>INVALID_SPAN_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>INVALID_TRACE_ID</span> {:kla=>String}</a></li><li><label class='placeholder'></label><a ><span class='hl'>Link</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='4320'><label for='4320'></label><a ><span class='hl'>Propagation</span> {:kla=>Module}</a><ul><li><input type='checkbox' id='4340'><label for='4340'></label><a ><span class='hl'>TraceContext</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>TextMapPropagator</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='4360'><label for='4360'></label><a ><span class='hl'>TraceParent</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>InvalidFormatError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>InvalidSpanIDError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>InvalidTraceIDError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>InvalidVersionError</span> {:kla=>Class, :aft=>[OpenTelemetry::Error, StandardError, Exception, Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TRACE_PARENT_HEADER</span> {:kla=>String}</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4380'><label for='4380'></label><a ><span class='hl'>Span</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>INVALID</span> {:kla=>OpenTelemetry::Trace::Span}</a></li></ul></li><li><input type='checkbox' id='4400'><label for='4400'></label><a ><span class='hl'>SpanContext</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>INVALID</span> {:kla=>OpenTelemetry::Trace::SpanContext}</a></li></ul></li><li><input type='checkbox' id='4420'><label for='4420'></label><a ><span class='hl'>SpanKind</span> {:kla=>Module}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>CLIENT</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>CONSUMER</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>INTERNAL</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>PRODUCER</span> {:kla=>Symbol}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SERVER</span> {:kla=>Symbol}</a></li></ul></li><li><input type='checkbox' id='4440'><label for='4440'></label><a ><span class='hl'>Status</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>ERROR</span> {:kla=>Integer}</a></li><li><label class='placeholder'></label><a ><span class='hl'>OK</span> {:kla=>Integer}</a></li><li><label class='placeholder'></label><a ><span class='hl'>UNSET</span> {:kla=>Integer}</a></li></ul></li><li><input type='checkbox' id='4460'><label for='4460'></label><a ><span class='hl'>TraceFlags</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>DEFAULT</span> {:kla=>OpenTelemetry::Trace::TraceFlags}</a></li><li><label class='placeholder'></label><a ><span class='hl'>SAMPLED</span> {:kla=>OpenTelemetry::Trace::TraceFlags}</a></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>Tracer</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><label class='placeholder'></label><a ><span class='hl'>TracerProvider</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a></li><li><input type='checkbox' id='4480'><label for='4480'></label><a ><span class='hl'>Tracestate</span> {:kla=>Class, :aft=>[Object, PP::ObjectMixin, JSON::Ext::Generator::GeneratorMethods::Object, ActiveSupport::Tryable, Kernel, BasicObject]}</a><ul><li><label class='placeholder'></label><a ><span class='hl'>DEFAULT</span> {:kla=>OpenTelemetry::Trace::Tracestate}</a></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='hl'>VERSION</span> {:kla=>String}</a></li></ul></li></ul><script>var TreeHtml = (function(){
+  var cmd, node, action;
+  var id = 0;
+
+  function hovering() {
+    var hover = document.querySelector('a:hover');
+    return hover && hover.parentNode;
+  }
+
+  function match_key(e) {
+    var char_code = (typeof e.which == "number") ? e.which : e.keyCode;
+    return char_code > 0 && key_cmds[String.fromCharCode(char_code)];
+  }
+
+  function check_if_not(li, tf) {
+    var checkbox = li.children[0];
+    (checkbox.nodeName === 'INPUT') &&
+      (checkbox.checked === tf || (checkbox.checked = tf));
+  }
+
+  function check_all(lis, tf) {
+    for(var i = 0; i < lis.length; i++) {
+      check_if_not(lis[i], tf);
+    }
+  }
+
+  function check_children(node, tf) {
+    var ul, lis;
+    (ul = node.querySelector('ul')) &&
+      (lis = ul.children) &&
+      check_all(lis, tf);
+  }
+
+  function id_of(li) {
+    return li.id || (li.id = 'i' + id++);
+  }
+
+  function twinkle(a, num) {
+    a.className = 'twinkle';
+    setTimeout(function(){_twinkle(a, num);}, 200);
+  }
+
+  function _twinkle(a, num) {
+    a.className = '';
+    (num > 0) && setTimeout(function(){twinkle(a, num - 1);}, 200);
+  }
+
+  Element.prototype.documentOffsetTop = function () {
+    return this.offsetTop + (this.offsetParent ? this.offsetParent.documentOffsetTop() : 0);
+  };
+
+  function go(start, end, duration, interval, fun) {
+    (function _go(from, step, to){
+      setTimeout(function(){
+        fun(from);
+        if(from === to) return;
+        next_target = from + step;
+        if ((step < 0) ? (next_target < to) : (next_target > to)){ return _go(to, step, to); }
+        _go(from + step, step, to);
+      }, interval);
+    })(start, (end-start)/(duration/interval), end);
+  }
+
+  function jump_and_twinkle(li) {
+    if(!li) return;
+    var to = li.documentOffsetTop() - (window.innerHeight / 2);
+    if(Math.abs(to - window.scrollY) < (window.innerHeight * 5)){
+      window.scroll({
+        top: to,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }else{
+      go(window.scrollY, to, 200, 20, function(y){window.scroll(0, y)});
+    }
+    twinkle(li.querySelector('a'), 6);
+  }
+
+
+  function ascii(li) {
+    let lines = []
+    function add_line(prefix, text) {
+      if (lines.length) lines.push('\n')
+      prefix = replace_branchs(prefix)
+      lines = lines.concat(prefix)
+      lines.push(' ')
+      lines.push(text)
+    }
+
+    function replace_branchs(array){
+      if (array.length === 0) return [];
+      let arr = array.map(ele => { return (ele === ' ├─' || ele === ' │ ') && ' │ ' || '   ' })
+      arr[array.length - 1] = array[array.length - 1]
+      return arr
+    }
+
+    function walk(li, prefix) {
+      let a = li.querySelector('a')
+      let checkbox = a.previousSibling.previousSibling
+      let fold = checkbox && (checkbox.checked && '+' || '-') || ' '
+      let text = a.innerText
+      add_line(prefix, fold + ' ' + text)
+
+      if (!checkbox || checkbox.checked) return
+      let ul = li.querySelector('ul')
+      if (ul === null) return
+      let i = 1
+      ul.childNodes.forEach(child => {
+          let branch = ul.childNodes.length === i ? ' └─' : ' ├─'
+          prefix.push(branch)
+          walk(child, prefix)
+          prefix.pop()
+          i = i + 1
+      })
+    }
+
+    walk(li, [])
+    console.log(lines.join(''))
+  }
+
+  var actions = {
+    ascii: ascii,
+    fold: function(node) {
+      check_children(node, true);
+    },
+    unfold: function(node) {
+      check_children(node, false);
+    },
+    prev: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.previousSibling);
+    },
+    next: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.nextSibling);
+    }
+  };
+
+  var key_cmds = {f: 'fold', u: 'unfold', p: 'prev', n: 'next', a: 'ascii'};
+
+  var resp_keypress = [function(e) {
+    e = e || window.event;
+    (cmd = match_key(e)) &&
+      (action = actions[cmd]) &&
+      (node = hovering()) &&
+      action(node);
+  }];
+
+  document.onkeypress = function(e) {
+    for(var i = 0; i < resp_keypress.length; i++) {
+      resp_keypress[i](e);
+    }
+  };
+
+  return {
+    debug: function() {
+      debugger;
+    },
+    more_onkeypress: function(f) {
+      resp_keypress.push(f);
+    },
+    hover_press: function(key, fun) {
+      var conn = Math.random().toString();
+      key_cmds[key] = conn;
+      actions[conn] = fun;
+    },
+    no_hover_press: function(key) {
+      delete actions[key_cmds[key]];
+      delete key_cmds[key];
+    },
+    sub_hover_press: function(old, neo) {
+      key_cmds[neo] = key_cmds[old];
+      delete key_cmds[old];
+    },
+  };
+})();
+;var TreeHtmlGroup = (function () {
+  var tree = document.querySelector('ul')
+  var group_id = 0
+  var tree_id_prefix = 0
+
+  function group_by_key(ul, key_func) {
+    var last_key = null
+    var lis_groups = []
+
+    function last_group() {
+      return lis_groups[lis_groups.length - 1]
+    }
+
+    var children_count = ul.children.length
+    for (var i = 0; i < children_count; i++) {
+      var li = ul.children[i]
+      callee_path = key_func(li)
+      if (last_key !== callee_path) {
+        last_key = callee_path
+        lis_groups.push([])
+      }
+      last_group().push(li)
+    }
+
+    if (lis_groups.length == 1 && key_func(lis_groups[0][0]) == key_func(ul.parentElement)) {
+      return
+    }
+
+    lis_groups.forEach(function (group) {
+      var key = key_func(group[0])
+      wrap_into_group(group, key)
+    })
+  }
+
+  function wrap_into_group(lis, key) {
+    var id = 'g' + group_id++
+    var html = '<li>' +
+      '<input type="checkbox" id="' + id + '">' +
+      '<label for="' + id + '"></label>' +
+      '<a>' + key + '</a>' +
+      '<ul></ul>' +
+      '</li>'
+
+    lis[0].insertAdjacentHTML('beforebegin', html)
+    var ul = document.querySelector('#' + id + ' ~ ul')
+    lis.forEach(function (li) {
+      ul.insertAdjacentElement('beforeend', li)
+    })
+  }
+
+  function switch_tree(name) {
+    var id = name === '' ? name : name_to_id(name)
+    document.querySelectorAll('.tree-html').forEach(function (tree) {
+      if (tree.id !== id) {
+        tree.style = 'display:none'
+      } else {
+        tree.style = ''
+      }
+    })
+  }
+
+  function name_to_id(name) {
+    return 'tree-html-group-' + name
+  }
+
+  return function (opt) {
+    var id = name_to_id(opt['name'])
+    if (document.getElementById(id)) {
+      return switch_tree
+    }
+
+    var id_pattern = '$1p-' + tree_id_prefix++ + '$2$3'
+    var li_ids_changed = tree.innerHTML
+      .replace(/(<input type="checkbox" id=")(.+?)(">)/, id_pattern)
+      .replace(/(<label for=")(.+?)(">)/, id_pattern)
+
+    tree.insertAdjacentHTML('beforebegin', '<ul id="' + id + '" class="tree-html" style="display:none">' + li_ids_changed + '</ul>')
+
+    var uls = document.querySelectorAll('#' + id + ',#' + id + ' ul')
+    var key_func = opt['key']
+    for (var i = uls.length - 1; i > 0; i--) {
+      var ul = uls[i]
+      group_by_key(ul, key_func)
+    }
+
+    return switch_tree
+  }
+})();
+</script></body></html>
