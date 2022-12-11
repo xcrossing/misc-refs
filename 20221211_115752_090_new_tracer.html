@@ -1,0 +1,395 @@
+<!DOCTYPE HTML><html><head><meta charset='utf-8'/><style>body {
+    font-family: 'Dejavu Sans Mono', 'Arial', sans-serif;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tree-html ul {
+    margin-left: 15px;
+}
+
+.tree-html li {
+    list-style-type: none;
+    margin: 10px;
+    position: relative;
+}
+
+.tree-html li::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    width: 15px;
+    height: 15px;
+}
+
+.tree-html li::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    width: 15px;
+    height: 100%;
+}
+
+.tree-html li:last-child::after {
+    display: none;
+}
+
+ul.tree-html>li:first-child::before {
+    display: none;
+}
+
+.tree-html li a {
+    padding: 2px 5px;
+}
+
+.tree-html li a:hover, .tree-html li a:hover+ul li a,
+.tree-html li a:focus, .tree-html li a:focus+ul li a {
+    background-color: #d3d3d3;
+}
+
+.tree-html a.twinkle,
+.tree-html li a.twinkle:hover, .tree-html li a:hover+ul li a.twinkle,
+.tree-html li a.twinkle:focus, .tree-html li a:focus+ul li a.twinkle {
+  background-color: #00bcd4;
+}
+
+.tree-html label {
+  margin: .2em 0 0 -.6em;
+  position: absolute;
+  border: 1px solid #ccc;
+  background: white;
+  width: .6em;
+  height: .6em;
+  display: inline-block;
+  line-height: .65;
+}
+
+.tree-html label.placeholder {
+  visibility: hidden;
+}
+
+.tree-html label::before {
+  color: #ccc;
+  font-family: serif;
+  margin-left: 0.02em;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+  display: none
+}
+
+input[type='checkbox']:checked ~ ul {
+  display: none
+}
+
+input[type="checkbox"] + label::before {
+  content: '-';
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: '+';
+}
+.highlight{color: #a50000;}</style></head><body><ul class='tree-html'><li><input type='checkbox' id='2800'><label for='2800'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::Tracer:0x00005589b48dcc58&gt;'><span class='highlight'>Object#block in &lt;main&gt;</span> otel.rb:16</a><ul><li><input type='checkbox' id='2820'><label for='2820'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::TracerProvider:0x00005589b4fe2c00&gt;'><span class='highlight'>OpenTelemetry.tracer_provider</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry.rb:64</a><ul><li><input type='checkbox' id='2840'><label for='2840'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::TracerProvider:0x00005589b4fe2c00&gt;'><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry.rb:65</a><ul><li><label class='placeholder'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::TracerProvider:0x00005589b4fe2c00&gt;'><span class='highlight'>OpenTelemetry.block in tracer_provider</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry.rb:65</a></li></ul></li></ul></li><li><input type='checkbox' id='2860'><label for='2860'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::Tracer:0x00005589b48dcc58&gt;'><span class='highlight'>OpenTelemetry::SDK::Trace::TracerProvider#tracer</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:51</a><ul><li><input type='checkbox' id='2880'><label for='2880'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::Tracer:0x00005589b48dcc58&gt;'><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a><ul><li><input type='checkbox' id='2900'><label for='2900'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::Tracer:0x00005589b48dcc58&gt;'><span class='highlight'>OpenTelemetry::SDK::Trace::TracerProvider#block in tracer</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a><ul><li><input type='checkbox' id='2920'><label for='2920'></label><a data-return='#&lt;struct OpenTelemetry::SDK::Trace::TracerProvider::Key name=&quot;my_app_or_gem&quot;, version=&quot;0.1.0&quot;&gt;'><span class='highlight'>#&lt;Class:OpenTelemetry::SDK::Trace::TracerProvider::Key&gt;#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a><ul><li><label class='placeholder'></label><a data-return='nil'><span class='highlight'>Struct#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a></li></ul></li><li><input type='checkbox' id='2940'><label for='2940'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::Tracer:0x00005589b48dcc58&gt;'><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a><ul><li><input type='checkbox' id='2960'><label for='2960'></label><a data-return='#&lt;OpenTelemetry::SDK::Trace::TracerProvider:0x00005589b4fe2c00&gt;'><span class='highlight'>OpenTelemetry::SDK::Trace::Tracer#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer.rb:21</a><ul><li><input type='checkbox' id='2980'><label for='2980'></label><a data-return='#&lt;struct OpenTelemetry::SDK::InstrumentationLibrary name=&quot;my_app_or_gem&quot;, version=&quot;0.1.0&quot;&gt;'><span class='highlight'>#&lt;Class:OpenTelemetry::SDK::InstrumentationLibrary&gt;#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer.rb:22</a><ul><li><label class='placeholder'></label><a data-return='nil'><span class='highlight'>Struct#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer.rb:22</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3000'><label for='3000'></label><a data-return='-4358887947417009268'><span class='highlight'>Struct#hash</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a><ul><li><label class='placeholder'></label><a data-return='1369261992863383472'><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a></li><li><label class='placeholder'></label><a data-return='4353688210639757199'><span class='highlight'>String#hash</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a></li><li><label class='placeholder'></label><a data-return='2814101303889992063'><span class='highlight'>String#hash</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:55</a></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><script>var TreeHtml = (function(){
+  var cmd, node, action;
+  var id = 0;
+
+  function hovering() {
+    var hover = document.querySelector('a:hover');
+    return hover && hover.parentNode;
+  }
+
+  function match_key(e) {
+    var char_code = (typeof e.which == "number") ? e.which : e.keyCode;
+    return char_code > 0 && key_cmds[String.fromCharCode(char_code)];
+  }
+
+  function check_if_not(li, tf) {
+    var checkbox = li.children[0];
+    (checkbox.nodeName === 'INPUT') &&
+      (checkbox.checked === tf || (checkbox.checked = tf));
+  }
+
+  function check_all(lis, tf) {
+    for(var i = 0; i < lis.length; i++) {
+      check_if_not(lis[i], tf);
+    }
+  }
+
+  function check_children(node, tf) {
+    var ul, lis;
+    (ul = node.querySelector('ul')) &&
+      (lis = ul.children) &&
+      check_all(lis, tf);
+  }
+
+  function id_of(li) {
+    return li.id || (li.id = 'i' + id++);
+  }
+
+  function twinkle(a, num) {
+    a.className = 'twinkle';
+    setTimeout(function(){_twinkle(a, num);}, 200);
+  }
+
+  function _twinkle(a, num) {
+    a.className = '';
+    (num > 0) && setTimeout(function(){twinkle(a, num - 1);}, 200);
+  }
+
+  Element.prototype.documentOffsetTop = function () {
+    return this.offsetTop + (this.offsetParent ? this.offsetParent.documentOffsetTop() : 0);
+  };
+
+  function go(start, end, duration, interval, fun) {
+    (function _go(from, step, to){
+      setTimeout(function(){
+        fun(from);
+        if(from === to) return;
+        next_target = from + step;
+        if ((step < 0) ? (next_target < to) : (next_target > to)){ return _go(to, step, to); }
+        _go(from + step, step, to);
+      }, interval);
+    })(start, (end-start)/(duration/interval), end);
+  }
+
+  function jump_and_twinkle(li) {
+    if(!li) return;
+    var to = li.documentOffsetTop() - (window.innerHeight / 2);
+    if(Math.abs(to - window.scrollY) < (window.innerHeight * 5)){
+      window.scroll({
+        top: to,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }else{
+      go(window.scrollY, to, 200, 20, function(y){window.scroll(0, y)});
+    }
+    twinkle(li.querySelector('a'), 6);
+  }
+
+
+  function ascii(li) {
+    let lines = []
+    function add_line(prefix, text) {
+      if (lines.length) lines.push('\n')
+      prefix = replace_branchs(prefix)
+      lines = lines.concat(prefix)
+      lines.push(' ')
+      lines.push(text)
+    }
+
+    function replace_branchs(array){
+      if (array.length === 0) return [];
+      let arr = array.map(ele => { return (ele === ' ├─' || ele === ' │ ') && ' │ ' || '   ' })
+      arr[array.length - 1] = array[array.length - 1]
+      return arr
+    }
+
+    function walk(li, prefix) {
+      let a = li.querySelector('a')
+      let checkbox = a.previousSibling.previousSibling
+      let fold = checkbox && (checkbox.checked && '+' || '-') || ' '
+      let text = a.innerText
+      add_line(prefix, fold + ' ' + text)
+
+      if (!checkbox || checkbox.checked) return
+      let ul = li.querySelector('ul')
+      if (ul === null) return
+      let i = 1
+      ul.childNodes.forEach(child => {
+          let branch = ul.childNodes.length === i ? ' └─' : ' ├─'
+          prefix.push(branch)
+          walk(child, prefix)
+          prefix.pop()
+          i = i + 1
+      })
+    }
+
+    walk(li, [])
+    console.log(lines.join(''))
+  }
+
+  var actions = {
+    ascii: ascii,
+    fold: function(node) {
+      check_children(node, true);
+    },
+    unfold: function(node) {
+      check_children(node, false);
+    },
+    prev: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.previousSibling);
+    },
+    next: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.nextSibling);
+    }
+  };
+
+  var key_cmds = {f: 'fold', u: 'unfold', p: 'prev', n: 'next', a: 'ascii'};
+
+  var resp_keypress = [function(e) {
+    e = e || window.event;
+    (cmd = match_key(e)) &&
+      (action = actions[cmd]) &&
+      (node = hovering()) &&
+      action(node);
+  }];
+
+  document.onkeypress = function(e) {
+    for(var i = 0; i < resp_keypress.length; i++) {
+      resp_keypress[i](e);
+    }
+  };
+
+  return {
+    debug: function() {
+      debugger;
+    },
+    more_onkeypress: function(f) {
+      resp_keypress.push(f);
+    },
+    hover_press: function(key, fun) {
+      var conn = Math.random().toString();
+      key_cmds[key] = conn;
+      actions[conn] = fun;
+    },
+    no_hover_press: function(key) {
+      delete actions[key_cmds[key]];
+      delete key_cmds[key];
+    },
+    sub_hover_press: function(old, neo) {
+      key_cmds[neo] = key_cmds[old];
+      delete key_cmds[old];
+    },
+  };
+})();
+;var TreeHtmlGroup = (function () {
+  var tree = document.querySelector('ul')
+  var group_id = 0
+  var tree_id_prefix = 0
+
+  function group_by_key(ul, key_func) {
+    var last_key = null
+    var lis_groups = []
+
+    function last_group() {
+      return lis_groups[lis_groups.length - 1]
+    }
+
+    var children_count = ul.children.length
+    for (var i = 0; i < children_count; i++) {
+      var li = ul.children[i]
+      callee_path = key_func(li)
+      if (last_key !== callee_path) {
+        last_key = callee_path
+        lis_groups.push([])
+      }
+      last_group().push(li)
+    }
+
+    if (lis_groups.length == 1 && key_func(lis_groups[0][0]) == key_func(ul.parentElement)) {
+      return
+    }
+
+    lis_groups.forEach(function (group) {
+      var key = key_func(group[0])
+      wrap_into_group(group, key)
+    })
+  }
+
+  function wrap_into_group(lis, key) {
+    var id = 'g' + group_id++
+    var html = '<li>' +
+      '<input type="checkbox" id="' + id + '">' +
+      '<label for="' + id + '"></label>' +
+      '<a>' + key + '</a>' +
+      '<ul></ul>' +
+      '</li>'
+
+    lis[0].insertAdjacentHTML('beforebegin', html)
+    var ul = document.querySelector('#' + id + ' ~ ul')
+    lis.forEach(function (li) {
+      ul.insertAdjacentElement('beforeend', li)
+    })
+  }
+
+  function switch_tree(name) {
+    var id = name === '' ? name : name_to_id(name)
+    document.querySelectorAll('.tree-html').forEach(function (tree) {
+      if (tree.id !== id) {
+        tree.style = 'display:none'
+      } else {
+        tree.style = ''
+      }
+    })
+  }
+
+  function name_to_id(name) {
+    return 'tree-html-group-' + name
+  }
+
+  return function (opt) {
+    var id = name_to_id(opt['name'])
+    if (document.getElementById(id)) {
+      return switch_tree
+    }
+
+    var id_pattern = '$1p-' + tree_id_prefix++ + '$2$3'
+    var li_ids_changed = tree.innerHTML
+      .replace(/(<input type="checkbox" id=")(.+?)(">)/, id_pattern)
+      .replace(/(<label for=")(.+?)(">)/, id_pattern)
+
+    tree.insertAdjacentHTML('beforebegin', '<ul id="' + id + '" class="tree-html" style="display:none">' + li_ids_changed + '</ul>')
+
+    var uls = document.querySelectorAll('#' + id + ',#' + id + ' ul')
+    var key_func = opt['key']
+    for (var i = uls.length - 1; i > 0; i--) {
+      var ul = uls[i]
+      group_by_key(ul, key_func)
+    }
+
+    return switch_tree
+  }
+})();
+</script><script >var group_by_file = (function(){
+  var grouped_by_file = false
+
+  return function(){
+    var sw = TreeHtmlGroup({
+      name: 'by_file',
+      key: function get_path(li) {
+        var p = li.querySelector('a').innerText.replace(/.*\s(.*):\d+/, '$1')
+        if (p === '') {
+          var callees = li.querySelector('ul')
+          if (callees !== null) {
+            return get_path(callees.children[0])
+          }
+        }
+        return '<b>' + p + '</b>'
+      }
+    })
+
+    sw(grouped_by_file ? '' : 'by_file')
+    grouped_by_file = !grouped_by_file
+  }
+})()
+</script><script >(function(){
+  TreeHtml.hover_press('r', function(n){
+    var a = n.querySelector('a');
+    var repl = '> ' + a.querySelector('span').innerText + "\n" + a.getAttribute('data-return');
+    console.log(repl);
+  });
+})();
+</script></body></html>
