@@ -1,0 +1,388 @@
+<!DOCTYPE HTML><html><head><meta charset='utf-8'/><style>body {
+    font-family: 'Dejavu Sans Mono', 'Arial', sans-serif;
+    font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tree-html ul {
+    margin-left: 15px;
+}
+
+.tree-html li {
+    list-style-type: none;
+    margin: 10px;
+    position: relative;
+}
+
+.tree-html li::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    width: 15px;
+    height: 15px;
+}
+
+.tree-html li::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -28px;
+    border-left: 1px dotted #ccc;
+    width: 15px;
+    height: 100%;
+}
+
+.tree-html li:last-child::after {
+    display: none;
+}
+
+ul.tree-html>li:first-child::before {
+    display: none;
+}
+
+.tree-html li a {
+    padding: 2px 5px;
+}
+
+.tree-html li a:hover, .tree-html li a:hover+ul li a,
+.tree-html li a:focus, .tree-html li a:focus+ul li a {
+    background-color: #d3d3d3;
+}
+
+.tree-html a.twinkle,
+.tree-html li a.twinkle:hover, .tree-html li a:hover+ul li a.twinkle,
+.tree-html li a.twinkle:focus, .tree-html li a:focus+ul li a.twinkle {
+  background-color: #00bcd4;
+}
+
+.tree-html label {
+  margin: .2em 0 0 -.6em;
+  position: absolute;
+  border: 1px solid #ccc;
+  background: white;
+  width: .6em;
+  height: .6em;
+  display: inline-block;
+  line-height: .65;
+}
+
+.tree-html label.placeholder {
+  visibility: hidden;
+}
+
+.tree-html label::before {
+  color: #ccc;
+  font-family: serif;
+  margin-left: 0.02em;
+}
+
+input[type='checkbox'] {
+  margin-left: 5px;
+  display: none
+}
+
+input[type='checkbox']:checked ~ ul {
+  display: none
+}
+
+input[type="checkbox"] + label::before {
+  content: '-';
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: '+';
+}
+.highlight{color: #a50000;}</style></head><body><ul class='tree-html'><li><input type='checkbox' id='2780'><label for='2780'></label><a ><span class='highlight'>Object#block in &lt;main&gt;</span> otel.rb:21</a><ul><li><input type='checkbox' id='2800'><label for='2800'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Tracer#in_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/tracer.rb:26</a><ul><li><input type='checkbox' id='2820'><label for='2820'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Tracer#start_span</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer.rb:30</a><ul><li><input type='checkbox' id='2840'><label for='2840'></label><a ><span class='highlight'>OpenTelemetry::Context.current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:31</a><ul><li><input type='checkbox' id='2860'><label for='2860'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]=</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#last</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:32</a></li></ul></li><li><input type='checkbox' id='2880'><label for='2880'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a></li></ul></li><li><input type='checkbox' id='2900'><label for='2900'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><input type='checkbox' id='2920'><label for='2920'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::TracerProvider#internal_create_span</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:129</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><input type='checkbox' id='2940'><label for='2940'></label><a ><span class='highlight'>OpenTelemetry::Trace.generate_trace_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:28</a><ul><li><input type='checkbox' id='2960'><label for='2960'></label><a ><span class='highlight'>Kernel#loop</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:29</a><ul><li><input type='checkbox' id='2980'><label for='2980'></label><a ><span class='highlight'>OpenTelemetry::Trace.block in generate_trace_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:29</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Random&gt;#bytes</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:30</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3000'><label for='3000'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::ParentBased#should_sample?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/parent_based.rb:47</a><ul><li><input type='checkbox' id='3020'><label for='3020'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><input type='checkbox' id='3040'><label for='3040'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::ConstantSampler#should_sample?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/constant_sampler.rb:29</a><ul><li><input type='checkbox' id='3060'><label for='3060'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a></li></ul></li><li><input type='checkbox' id='3080'><label for='3080'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/constant_sampler.rb:30</a><ul><li><input type='checkbox' id='3100'><label for='3100'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:43</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:45</a></li></ul></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3120'><label for='3120'></label><a ><span class='highlight'>OpenTelemetry::Trace.generate_span_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:39</a><ul><li><input type='checkbox' id='3140'><label for='3140'></label><a ><span class='highlight'>Kernel#loop</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:40</a><ul><li><input type='checkbox' id='3160'><label for='3160'></label><a ><span class='highlight'>OpenTelemetry::Trace.block in generate_span_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:40</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Random&gt;#bytes</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:41</a></li></ul></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#recording?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:59</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#sampled?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:52</a></li><li><input type='checkbox' id='3180'><label for='3180'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:142</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:24</a></li></ul></li><li><input type='checkbox' id='3200'><label for='3200'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:144</a><ul><li><input type='checkbox' id='3220'><label for='3220'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:279</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span.rb:32</a></li><li><input type='checkbox' id='3240'><label for='3240'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:281</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Thread::Mutex#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:281</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:284</a></li><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Hash&gt;#[]</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:294</a></li><li><input type='checkbox' id='3260'><label for='3260'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#trim_span_attributes</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:341</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Numeric#positive?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:345</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#truncate_attribute_values</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:350</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#trim_links</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:360</a></li><li><input type='checkbox' id='3280'><label for='3280'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#monotonic_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:427</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:428</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::Span#recording?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span.rb:41</a></li><li><input type='checkbox' id='3300'><label for='3300'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#realtime_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:423</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:424</a></li></ul></li><li><input type='checkbox' id='3320'><label for='3320'></label><a ><span class='highlight'>Array#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:324</a><ul><li><input type='checkbox' id='3340'><label for='3340'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:324</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#on_start</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:74</a></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3360'><label for='3360'></label><a ><span class='highlight'>OpenTelemetry::Trace.with_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:71</a><ul><li><input type='checkbox' id='3380'><label for='3380'></label><a ><span class='highlight'>OpenTelemetry::Context.with_value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:84</a><ul><li><input type='checkbox' id='3400'><label for='3400'></label><a ><span class='highlight'>OpenTelemetry::Context.current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:31</a><ul><li><input type='checkbox' id='3420'><label for='3420'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#last</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:32</a></li></ul></li><li><input type='checkbox' id='3440'><label for='3440'></label><a ><span class='highlight'>OpenTelemetry::Context#set_value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:150</a><ul><li><input type='checkbox' id='3460'><label for='3460'></label><a ><span class='highlight'>Kernel#dup</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a><ul><li><input type='checkbox' id='3480'><label for='3480'></label><a ><span class='highlight'>Kernel#initialize_dup</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Hash#initialize_copy</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:152</a></li><li><input type='checkbox' id='3500'><label for='3500'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:153</a><ul><li><input type='checkbox' id='3520'><label for='3520'></label><a ><span class='highlight'>OpenTelemetry::Context#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:131</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:132</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3540'><label for='3540'></label><a ><span class='highlight'>OpenTelemetry::Context.attach</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:42</a><ul><li><input type='checkbox' id='3560'><label for='3560'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#push</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:44</a></li></ul></li><li><input type='checkbox' id='3580'><label for='3580'></label><a ><span class='highlight'>OpenTelemetry::Trace.block in with_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:72</a><ul><li><input type='checkbox' id='3600'><label for='3600'></label><a ><span class='highlight'>Object#block (2 levels) in &lt;main&gt;</span> otel.rb:22</a><ul><li><input type='checkbox' id='3620'><label for='3620'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Tracer#in_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/tracer.rb:26</a><ul><li><input type='checkbox' id='3640'><label for='3640'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Tracer#start_span</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer.rb:30</a><ul><li><input type='checkbox' id='3660'><label for='3660'></label><a ><span class='highlight'>OpenTelemetry::Context.current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:31</a><ul><li><input type='checkbox' id='3680'><label for='3680'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#last</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:32</a></li></ul></li><li><input type='checkbox' id='3700'><label for='3700'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><input type='checkbox' id='3720'><label for='3720'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:140</a></li></ul></li></ul></li><li><input type='checkbox' id='3740'><label for='3740'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><input type='checkbox' id='3760'><label for='3760'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:140</a></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><input type='checkbox' id='3780'><label for='3780'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::TracerProvider#internal_create_span</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:129</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><input type='checkbox' id='3800'><label for='3800'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::ParentBased#should_sample?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/parent_based.rb:47</a><ul><li><input type='checkbox' id='3820'><label for='3820'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><input type='checkbox' id='3840'><label for='3840'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:140</a></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#valid?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:65</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#remote?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:72</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::TraceFlags#sampled?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/trace_flags.rb:42</a></li><li><input type='checkbox' id='3860'><label for='3860'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::ConstantSampler#should_sample?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/constant_sampler.rb:29</a><ul><li><input type='checkbox' id='3880'><label for='3880'></label><a ><span class='highlight'>OpenTelemetry::Trace.current_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:50</a><ul><li><input type='checkbox' id='3900'><label for='3900'></label><a ><span class='highlight'>OpenTelemetry::Context#value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:139</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:140</a></li></ul></li></ul></li><li><input type='checkbox' id='3920'><label for='3920'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/constant_sampler.rb:30</a><ul><li><input type='checkbox' id='3940'><label for='3940'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:43</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:45</a></li></ul></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='3960'><label for='3960'></label><a ><span class='highlight'>OpenTelemetry::Trace.generate_span_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:39</a><ul><li><input type='checkbox' id='3980'><label for='3980'></label><a ><span class='highlight'>Kernel#loop</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:40</a><ul><li><input type='checkbox' id='4000'><label for='4000'></label><a ><span class='highlight'>OpenTelemetry::Trace.block in generate_span_id</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:40</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Random&gt;#bytes</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:41</a></li></ul></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#recording?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:59</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Samplers::Result#sampled?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/samplers/result.rb:52</a></li><li><input type='checkbox' id='4020'><label for='4020'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:142</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::SpanContext#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span_context.rb:24</a></li></ul></li><li><input type='checkbox' id='4040'><label for='4040'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/tracer_provider.rb:144</a><ul><li><input type='checkbox' id='4060'><label for='4060'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:279</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/span.rb:32</a></li><li><input type='checkbox' id='4080'><label for='4080'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:281</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Thread::Mutex#initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:281</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>String#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:284</a></li><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Hash&gt;#[]</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:294</a></li><li><input type='checkbox' id='4100'><label for='4100'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#trim_span_attributes</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:341</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Numeric#positive?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:345</a></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#truncate_attribute_values</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:350</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#trim_links</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:360</a></li><li><input type='checkbox' id='4120'><label for='4120'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#monotonic_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:427</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:428</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#recording?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:55</a></li><li><input type='checkbox' id='4140'><label for='4140'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#relative_realtime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:419</a><ul><li><input type='checkbox' id='4160'><label for='4160'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#monotonic_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:427</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:428</a></li></ul></li></ul></li><li><input type='checkbox' id='4180'><label for='4180'></label><a ><span class='highlight'>Array#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:324</a><ul><li><input type='checkbox' id='4200'><label for='4200'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in initialize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:324</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#on_start</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:74</a></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4220'><label for='4220'></label><a ><span class='highlight'>OpenTelemetry::Trace.with_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:71</a><ul><li><input type='checkbox' id='4240'><label for='4240'></label><a ><span class='highlight'>OpenTelemetry::Context.with_value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:84</a><ul><li><input type='checkbox' id='4260'><label for='4260'></label><a ><span class='highlight'>OpenTelemetry::Context.current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:31</a><ul><li><input type='checkbox' id='4280'><label for='4280'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#last</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:32</a></li></ul></li><li><input type='checkbox' id='4300'><label for='4300'></label><a ><span class='highlight'>OpenTelemetry::Context#set_value</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:150</a><ul><li><input type='checkbox' id='4320'><label for='4320'></label><a ><span class='highlight'>Kernel#dup</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a><ul><li><input type='checkbox' id='4340'><label for='4340'></label><a ><span class='highlight'>Kernel#initialize_dup</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a><ul><li><input type='checkbox' id='4360'><label for='4360'></label><a ><span class='highlight'>Hash#initialize_copy</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:151</a></li></ul></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#hash</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:152</a></li><li><input type='checkbox' id='4380'><label for='4380'></label><a ><span class='highlight'>Class#new</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:153</a><ul><li><input type='checkbox' id='4400'><label for='4400'></label><a ><span class='highlight'>OpenTelemetry::Context#initialize</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:131</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:132</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4420'><label for='4420'></label><a ><span class='highlight'>OpenTelemetry::Context.attach</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:42</a><ul><li><input type='checkbox' id='4440'><label for='4440'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#push</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:44</a></li></ul></li><li><input type='checkbox' id='4460'><label for='4460'></label><a ><span class='highlight'>OpenTelemetry::Trace.block in with_span</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace.rb:72</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Object#block (3 levels) in &lt;main&gt;</span> otel.rb:23</a></li></ul></li><li><input type='checkbox' id='4480'><label for='4480'></label><a ><span class='highlight'>OpenTelemetry::Context.detach</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:55</a><ul><li><input type='checkbox' id='4500'><label for='4500'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#pop</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:60</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4520'><label for='4520'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:230</a><ul><li><input type='checkbox' id='4540'><label for='4540'></label><a ><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:231</a><ul><li><input type='checkbox' id='4560'><label for='4560'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:231</a><ul><li><input type='checkbox' id='4580'><label for='4580'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#relative_timestamp</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:409</a><ul><li><input type='checkbox' id='4600'><label for='4600'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#relative_realtime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:419</a><ul><li><input type='checkbox' id='4620'><label for='4620'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#monotonic_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:427</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:428</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4640'><label for='4640'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#validated_attributes</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:335</a><ul><li><input type='checkbox' id='4660'><label for='4660'></label><a ><span class='highlight'>OpenTelemetry::SDK::Internal.valid_attributes?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:51</a><ul><li><input type='checkbox' id='4680'><label for='4680'></label><a ><span class='highlight'>Enumerable#all?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:52</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Hash#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:52</a></li></ul></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:237</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:238</a></li></ul></li></ul></li><li><input type='checkbox' id='4700'><label for='4700'></label><a ><span class='highlight'>Array#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:241</a><ul><li><input type='checkbox' id='4720'><label for='4720'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:241</a><ul><li><input type='checkbox' id='4740'><label for='4740'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#on_finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:77</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::TraceFlags#sampled?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/trace_flags.rb:42</a></li><li><input type='checkbox' id='4760'><label for='4760'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#lock</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:215</a><ul><li><input type='checkbox' id='4780'><label for='4780'></label><a ><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:216</a><ul><li><input type='checkbox' id='4800'><label for='4800'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#block in lock</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:216</a><ul><li><input type='checkbox' id='4820'><label for='4820'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#block in on_finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:80</a><ul><li><input type='checkbox' id='4840'><label for='4840'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#reset_on_fork</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:174</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#pid</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:175</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Numeric#positive?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:83</a></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4860'><label for='4860'></label><a ><span class='highlight'>OpenTelemetry::Context.detach</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:55</a><ul><li><input type='checkbox' id='4880'><label for='4880'></label><a ><span class='highlight'>OpenTelemetry::Context.stack</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:126</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Thread&gt;#current</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Thread#[]</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:127</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Array#pop</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/context.rb:60</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='4900'><label for='4900'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:230</a><ul><li><input type='checkbox' id='4920'><label for='4920'></label><a ><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:231</a><ul><li><input type='checkbox' id='4940'><label for='4940'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:231</a><ul><li><input type='checkbox' id='4960'><label for='4960'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#relative_timestamp</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:409</a><ul><li><input type='checkbox' id='4980'><label for='4980'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#relative_realtime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:419</a><ul><li><input type='checkbox' id='5000'><label for='5000'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#monotonic_now</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:427</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#clock_gettime</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:428</a></li></ul></li></ul></li></ul></li><li><input type='checkbox' id='5020'><label for='5020'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#validated_attributes</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:335</a><ul><li><input type='checkbox' id='5040'><label for='5040'></label><a ><span class='highlight'>OpenTelemetry::SDK::Internal.valid_attributes?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:51</a><ul><li><input type='checkbox' id='5060'><label for='5060'></label><a ><span class='highlight'>Enumerable#all?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:52</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>Hash#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/internal.rb:52</a></li></ul></li></ul></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:237</a></li><li><label class='placeholder'></label><a ><span class='highlight'>Kernel#freeze</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:238</a></li></ul></li></ul></li><li><input type='checkbox' id='5080'><label for='5080'></label><a ><span class='highlight'>Array#each</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:241</a><ul><li><input type='checkbox' id='5100'><label for='5100'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Span#block in finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/span.rb:241</a><ul><li><input type='checkbox' id='5120'><label for='5120'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#on_finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:77</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>OpenTelemetry::Trace::TraceFlags#sampled?</span> $GemPath0/gems/opentelemetry-api-1.1.0/lib/opentelemetry/trace/trace_flags.rb:42</a></li><li><input type='checkbox' id='5140'><label for='5140'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#lock</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:215</a><ul><li><input type='checkbox' id='5160'><label for='5160'></label><a ><span class='highlight'>Thread::Mutex#synchronize</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:216</a><ul><li><input type='checkbox' id='5180'><label for='5180'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#block in lock</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:216</a><ul><li><input type='checkbox' id='5200'><label for='5200'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#block in on_finish</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:80</a><ul><li><input type='checkbox' id='5220'><label for='5220'></label><a ><span class='highlight'>OpenTelemetry::SDK::Trace::Export::BatchSpanProcessor#reset_on_fork</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:174</a><ul><li><label class='placeholder'></label><a ><span class='highlight'>#&lt;Class:Process&gt;#pid</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:175</a></li></ul></li><li><label class='placeholder'></label><a ><span class='highlight'>Numeric#positive?</span> $GemPath0/gems/opentelemetry-sdk-1.0.3/lib/opentelemetry/sdk/trace/export/batch_span_processor.rb:83</a></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><script>var TreeHtml = (function(){
+  var cmd, node, action;
+  var id = 0;
+
+  function hovering() {
+    var hover = document.querySelector('a:hover');
+    return hover && hover.parentNode;
+  }
+
+  function match_key(e) {
+    var char_code = (typeof e.which == "number") ? e.which : e.keyCode;
+    return char_code > 0 && key_cmds[String.fromCharCode(char_code)];
+  }
+
+  function check_if_not(li, tf) {
+    var checkbox = li.children[0];
+    (checkbox.nodeName === 'INPUT') &&
+      (checkbox.checked === tf || (checkbox.checked = tf));
+  }
+
+  function check_all(lis, tf) {
+    for(var i = 0; i < lis.length; i++) {
+      check_if_not(lis[i], tf);
+    }
+  }
+
+  function check_children(node, tf) {
+    var ul, lis;
+    (ul = node.querySelector('ul')) &&
+      (lis = ul.children) &&
+      check_all(lis, tf);
+  }
+
+  function id_of(li) {
+    return li.id || (li.id = 'i' + id++);
+  }
+
+  function twinkle(a, num) {
+    a.className = 'twinkle';
+    setTimeout(function(){_twinkle(a, num);}, 200);
+  }
+
+  function _twinkle(a, num) {
+    a.className = '';
+    (num > 0) && setTimeout(function(){twinkle(a, num - 1);}, 200);
+  }
+
+  Element.prototype.documentOffsetTop = function () {
+    return this.offsetTop + (this.offsetParent ? this.offsetParent.documentOffsetTop() : 0);
+  };
+
+  function go(start, end, duration, interval, fun) {
+    (function _go(from, step, to){
+      setTimeout(function(){
+        fun(from);
+        if(from === to) return;
+        next_target = from + step;
+        if ((step < 0) ? (next_target < to) : (next_target > to)){ return _go(to, step, to); }
+        _go(from + step, step, to);
+      }, interval);
+    })(start, (end-start)/(duration/interval), end);
+  }
+
+  function jump_and_twinkle(li) {
+    if(!li) return;
+    var to = li.documentOffsetTop() - (window.innerHeight / 2);
+    if(Math.abs(to - window.scrollY) < (window.innerHeight * 5)){
+      window.scroll({
+        top: to,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }else{
+      go(window.scrollY, to, 200, 20, function(y){window.scroll(0, y)});
+    }
+    twinkle(li.querySelector('a'), 6);
+  }
+
+
+  function ascii(li) {
+    let lines = []
+    function add_line(prefix, text) {
+      if (lines.length) lines.push('\n')
+      prefix = replace_branchs(prefix)
+      lines = lines.concat(prefix)
+      lines.push(' ')
+      lines.push(text)
+    }
+
+    function replace_branchs(array){
+      if (array.length === 0) return [];
+      let arr = array.map(ele => { return (ele === ' ├─' || ele === ' │ ') && ' │ ' || '   ' })
+      arr[array.length - 1] = array[array.length - 1]
+      return arr
+    }
+
+    function walk(li, prefix) {
+      let a = li.querySelector('a')
+      let checkbox = a.previousSibling.previousSibling
+      let fold = checkbox && (checkbox.checked && '+' || '-') || ' '
+      let text = a.innerText
+      add_line(prefix, fold + ' ' + text)
+
+      if (!checkbox || checkbox.checked) return
+      let ul = li.querySelector('ul')
+      if (ul === null) return
+      let i = 1
+      ul.childNodes.forEach(child => {
+          let branch = ul.childNodes.length === i ? ' └─' : ' ├─'
+          prefix.push(branch)
+          walk(child, prefix)
+          prefix.pop()
+          i = i + 1
+      })
+    }
+
+    walk(li, [])
+    console.log(lines.join(''))
+  }
+
+  var actions = {
+    ascii: ascii,
+    fold: function(node) {
+      check_children(node, true);
+    },
+    unfold: function(node) {
+      check_children(node, false);
+    },
+    prev: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.previousSibling);
+    },
+    next: function(node) {
+      twinkle(node.querySelector('a'), 6);
+      jump_and_twinkle(node.nextSibling);
+    }
+  };
+
+  var key_cmds = {f: 'fold', u: 'unfold', p: 'prev', n: 'next', a: 'ascii'};
+
+  var resp_keypress = [function(e) {
+    e = e || window.event;
+    (cmd = match_key(e)) &&
+      (action = actions[cmd]) &&
+      (node = hovering()) &&
+      action(node);
+  }];
+
+  document.onkeypress = function(e) {
+    for(var i = 0; i < resp_keypress.length; i++) {
+      resp_keypress[i](e);
+    }
+  };
+
+  return {
+    debug: function() {
+      debugger;
+    },
+    more_onkeypress: function(f) {
+      resp_keypress.push(f);
+    },
+    hover_press: function(key, fun) {
+      var conn = Math.random().toString();
+      key_cmds[key] = conn;
+      actions[conn] = fun;
+    },
+    no_hover_press: function(key) {
+      delete actions[key_cmds[key]];
+      delete key_cmds[key];
+    },
+    sub_hover_press: function(old, neo) {
+      key_cmds[neo] = key_cmds[old];
+      delete key_cmds[old];
+    },
+  };
+})();
+;var TreeHtmlGroup = (function () {
+  var tree = document.querySelector('ul')
+  var group_id = 0
+  var tree_id_prefix = 0
+
+  function group_by_key(ul, key_func) {
+    var last_key = null
+    var lis_groups = []
+
+    function last_group() {
+      return lis_groups[lis_groups.length - 1]
+    }
+
+    var children_count = ul.children.length
+    for (var i = 0; i < children_count; i++) {
+      var li = ul.children[i]
+      callee_path = key_func(li)
+      if (last_key !== callee_path) {
+        last_key = callee_path
+        lis_groups.push([])
+      }
+      last_group().push(li)
+    }
+
+    if (lis_groups.length == 1 && key_func(lis_groups[0][0]) == key_func(ul.parentElement)) {
+      return
+    }
+
+    lis_groups.forEach(function (group) {
+      var key = key_func(group[0])
+      wrap_into_group(group, key)
+    })
+  }
+
+  function wrap_into_group(lis, key) {
+    var id = 'g' + group_id++
+    var html = '<li>' +
+      '<input type="checkbox" id="' + id + '">' +
+      '<label for="' + id + '"></label>' +
+      '<a>' + key + '</a>' +
+      '<ul></ul>' +
+      '</li>'
+
+    lis[0].insertAdjacentHTML('beforebegin', html)
+    var ul = document.querySelector('#' + id + ' ~ ul')
+    lis.forEach(function (li) {
+      ul.insertAdjacentElement('beforeend', li)
+    })
+  }
+
+  function switch_tree(name) {
+    var id = name === '' ? name : name_to_id(name)
+    document.querySelectorAll('.tree-html').forEach(function (tree) {
+      if (tree.id !== id) {
+        tree.style = 'display:none'
+      } else {
+        tree.style = ''
+      }
+    })
+  }
+
+  function name_to_id(name) {
+    return 'tree-html-group-' + name
+  }
+
+  return function (opt) {
+    var id = name_to_id(opt['name'])
+    if (document.getElementById(id)) {
+      return switch_tree
+    }
+
+    var id_pattern = '$1p-' + tree_id_prefix++ + '$2$3'
+    var li_ids_changed = tree.innerHTML
+      .replace(/(<input type="checkbox" id=")(.+?)(">)/, id_pattern)
+      .replace(/(<label for=")(.+?)(">)/, id_pattern)
+
+    tree.insertAdjacentHTML('beforebegin', '<ul id="' + id + '" class="tree-html" style="display:none">' + li_ids_changed + '</ul>')
+
+    var uls = document.querySelectorAll('#' + id + ',#' + id + ' ul')
+    var key_func = opt['key']
+    for (var i = uls.length - 1; i > 0; i--) {
+      var ul = uls[i]
+      group_by_key(ul, key_func)
+    }
+
+    return switch_tree
+  }
+})();
+</script><script >var group_by_file = (function(){
+  var grouped_by_file = false
+
+  return function(){
+    var sw = TreeHtmlGroup({
+      name: 'by_file',
+      key: function get_path(li) {
+        var p = li.querySelector('a').innerText.replace(/.*\s(.*):\d+/, '$1')
+        if (p === '') {
+          var callees = li.querySelector('ul')
+          if (callees !== null) {
+            return get_path(callees.children[0])
+          }
+        }
+        return '<b>' + p + '</b>'
+      }
+    })
+
+    sw(grouped_by_file ? '' : 'by_file')
+    grouped_by_file = !grouped_by_file
+  }
+})()
+</script></body></html>
